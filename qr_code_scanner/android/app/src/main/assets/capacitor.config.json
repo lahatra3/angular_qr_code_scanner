@@ -1,0 +1,6 @@
+{
+	"appId": "com.example.itudiant",
+	"appName": "ITudiant",
+	"webDir": "dist/qr_code_scanner",
+	"bundledWebRuntime": false
+}
