@@ -3,17 +3,16 @@
     <div class="col-md-6 col-12">
       <!-- ngx-scanner-qrcode -->
       <ngx-scanner-qrcode #action="scanner" (data)="output = $event" 
-        (error)="onError($event)" class="border border-3 rounded-3"></ngx-scanner-qrcode>
+        (error)="onError($event)"></ngx-scanner-qrcode>
     
       <!-- data  -->
       <p class="data">{{ output }}</p>
     
       <!-- Loading -->
-      <p *ngIf="action.isLoading">⌛ Loading...</p>
+      <p *ngIf="action.isLoading" class="text-light text-center">⌛ Loading...</p>
     
       <!-- toggleCamera -->
-      <div class="text-center position-absolute bottom-0 start-50
-        translate-middle position-fixed">
+      <div class="text-center">
         <button (click)="action.toggleCamera()" class="btn" 
           [class.btn-info]="!action.isStart" [class.btn-warning]="action.isStart" 
           [disabled]="action.isLoading">
