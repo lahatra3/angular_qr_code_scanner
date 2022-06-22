@@ -1,0 +1,1 @@
+# angular_qr_code_scanner
